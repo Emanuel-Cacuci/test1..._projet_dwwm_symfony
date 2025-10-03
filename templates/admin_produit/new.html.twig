@@ -1,11 +1,50 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Nouveau Produit{% endblock %}
+{% block title %}Nouveau Produit
+{% endblock %}
 
 {% block body %}
-    <h1>Créer un nouveau Produit</h1>
 
-    {{ include('admin_produit/_form.html.twig') }}
+<style>
 
-    <a href="{{ path('app_admin_produit_index') }}">Retour</a>
+.container{
+position: relative;
+display:flex;
+flex-direction:column;
+
+}
+
+.divd{
+top : 0;
+left:0;
+position: absolute;
+background-color:red;
+transition:all 1s ease-out
+}
+
+
+</style>
+	<h1>Créer un nouveau Produit</h1>
+
+	{{ include('admin_produit/_form.html.twig') }}
+
+	<a href="{{ path('app_admin_produit_index') }}">Retour</a>
+<div class="container">
+	<div class="div"></div>
+	<div class="div"></div>
+	<div class="div divd"></div>
+
+	<div class="div"></div>
+	<button id="btnTop">Resssssstour</button>
+	<div class="div"></div>
+	<div class="div"></div>
+	<div class="div"></div>
+    </div>
+
+{% endblock %}
+
+{% block js %}
+
+	<script src="{{ asset('script/script.js') }}"></script>
+
 {% endblock %}

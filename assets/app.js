@@ -12,3 +12,15 @@ import './styles/formInscription.css';
 import './styles/formConnexion.css';
 
 console.log('This log comes from assets/app.js - welcome to AssetMapper! 🎉');
+
+console.log("salut")
+const button = document.getElementById('button');
+
+button.addEventListener('click', function (e) {
+    e.preventDefault();
+    // console.log(e.target)
+    button.innerText = "message envoye";
+    button.style.border = "1px solid red";
+    button.style.color = "blue";
+
+})
