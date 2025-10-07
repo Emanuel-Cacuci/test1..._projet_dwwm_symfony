@@ -1,19 +1,81 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Bienvenue!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
-        {% block stylesheets %}
-        {% endblock %}
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scle=1">
+        {# Ici cdnj #}
+		<title>
+			{% block title %}Bienvenue!
+			{% endblock %}
+		</title>
+		<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>"> {% block stylesheets %}{% endblock %}
 
-        {% block javascripts %}
-            {% block importmap %}{{ importmap('app') }}{% endblock %}
-        {% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
+		{% block javascripts %}
+			{% block importmap %}
+				{{ importmap('app') }}
+			{% endblock %}
+		{% endblock %}
+	</head>
+	<body>
 
-        {% block js %}{% endblock %}
-    </body>
+            {# Astuce : Option shift fleche bas #}
+            {# Utilise font-awesome pour les icons... #}
+
+        <header>
+            <div class="logo">
+                 <a href="{{ path('app_admin_produit_index') }}"><span class="fond">EC</span> Livres <br> & <br> Lumiéres</a>
+            </div>
+            <ul class="links">
+            <li><a href="{{ path('app_home') }}">Home</a></li>
+            <li><a href="">Compte utilisateur</a></li>
+            <li><a href="">Panier</a></li>
+            <li><a href="">Commandes</a></li>
+            <li><a href="">Mon compte</a></li>
+            <li><a href="">Gestion</a></li>
+            </ul>
+            <div class="menu-burger">
+
+            </div>
+        </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		{# <header>
+
+			<nav>
+				<ul>
+					<img class="image" src="{{asset('images/capture.png') }}" alt="capture">
+					<li>
+						<a href="">Accueil</a>
+					</li>
+					<li>
+						<a href="">Produits</a>
+					</li>
+					<li>
+						<a href="">Catégories</a>
+					</li>
+				</ul>
+			</nav>
+
+		</header> #}
+
+
+		{% block body %}{% endblock %}
+
+		{% block js %}{% endblock %}
+	</body>
 </html>

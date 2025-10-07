@@ -8,3 +8,20 @@ body {
     height: 12rem;
     border: 1px solid black;
 }
+
+
+
+/* 
+@media screen and (max-width:800px)  { 
+
+.divmain{
+
+    width: 10rem;
+    height: 10rem;
+    background-color: aqua;
+} 
+
+
+
+
+ } */

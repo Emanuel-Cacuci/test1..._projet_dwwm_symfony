@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fondLogo {
+    background-color: blue;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ul {
+    display: flex;
+    justify-content: space-around;
+     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+li {
+    list-style: none;
+
+}
+
+
+.image{
+    width: 50px;
+    height: 50px;
+    border-radius: 200px;
+}
+
+nav {
+    height: 500px;
+    background-color: rgb(116, 176, 232);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+} */
